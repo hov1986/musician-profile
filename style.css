@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url(background_2560x1600.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Header styles */
+header {
+  background-color: #c0c0c0;
+  border-radius: 10px;
+  text-align: center;
+  padding: auto;
+  margin: auto;
+}
+header h1 {
+  color: grey;
+  font-size: auto;
+  text-shadow: 1px 1px 2px black;
+}
+header h2 {
+  font-family: Times;
+  font-style: italic;
+}
+
+/* Layout container for image and bio */
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.img {
+  width: 100%;
+  max-width: 440px;
+  border: solid;
+  height: auto;
+}
+
+/* Biography section */
+section {
+  background-color: #808080;
+  border: solid;
+  padding: 10px;
+  max-width: 440px;
+  color: black;
+}
+section h3 {
+  text-align: center;
+}
+section p {
+  font-size: 11pt;
+  font-style: oblique;
+  font-family: Tahoma, Verdana, sans-serif;
+  text-align: left;
+}
+
+/* Video section */
+.video-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.video-container h4 {
+  color: antiquewhite;
+  margin-bottom: 10px;
+}
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.videos iframe {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 16 / 9;
+  border: solid;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: antiquewhite;
+  padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+}
